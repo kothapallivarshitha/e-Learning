@@ -1,0 +1,438 @@
+/* General styling */
+
+* {
+  box-sizing: border-box;
+  /* Makes sure padding and border don't add up to width/height */
+}
+
+body {
+  margin: 0;
+  overflow-y: auto;
+  /* Prevents scrolling */
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #f4f4f4;
+  background-image: url('background.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+/* Login and Register buttons */
+header .auth-buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+header .auth-buttons button {
+  background: #06ebf3;
+  color: #000000;
+  border: 2px solid #070707;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header .auth-buttons button:hover {
+  background-color: #4a90e2;
+  color: #000000;
+}
+
+main {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(35, 35, 35, 0.5);
+  border-radius: 15px;
+  margin: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.welcome-section h2 {
+  font-size: 3rem;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.course-section {
+  text-align: center;
+}
+
+.course-section .course-buttons {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.course-section button {
+  background-color: rgba(111, 206, 211, 0.956);
+  color: #1a1a1a;
+  padding: 0.8rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.course-section button:hover {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.user-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.login-fields {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-fields input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  font-size: 1rem;
+}
+
+.login-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.login-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-links a {
+  color: #007BFF;
+  /* This is a blue color, you can change it */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+.register-container, .login-container {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.register-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register-form input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  font-size: 1rem;
+}
+
+.register-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #45a049;
+}
+
+.register-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.register-links a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.register-links a:hover {
+  text-decoration: underline;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-container {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-btn-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.course-btn {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.course-btn:hover {
+  background-color: #ddd;
+}
+
+/* PythonCourse.css */
+.course-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.level {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.level h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.topic {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.topic:hover {
+  background-color: #d0d0d0;
+}
+
+.topic.completed {
+  background-color: #4caf50;
+  cursor: default;
+}
+
+.level.completed {
+  background-color: #e8f5e9;
+  border-color: #4caf50;
+}
+
+/* External CSS (App.css) */
+.course-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.course-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.level-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.level-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.topic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.topic-link:hover {
+  background-color: #0056b3;
+}
+
+.cssBasicTopic {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(250, 147, 147, 0.1);
+  border-radius: 4px;
+}
+
+.cssBasicTopic h1 {
+  font-size: 24px;
+  color: #fe7373;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 16px;
+  color: #d5ee62;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.completeButton {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+/* ... (previous styles) ... */
+
+h2 {
+  font-size: 20px;
+  color: #ff8b8b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.snippet {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+code {
+  white-space: pre-line;
+}
